@@ -42,7 +42,6 @@ public class MainActivity extends SherlockListActivity {
         getListView().setDividerHeight(1);
         registerForContextMenu(getListView());
         myTimer = new Timer();
-        startRefreshing();
     }
 
     @Override
@@ -61,7 +60,7 @@ public class MainActivity extends SherlockListActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //startRefreshing();
+        startRefreshing();
     }
 
     @Override
