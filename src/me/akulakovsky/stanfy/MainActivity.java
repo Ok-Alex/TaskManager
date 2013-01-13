@@ -89,6 +89,7 @@ public class MainActivity extends SherlockListActivity {
     }
 
     private void startRefreshing(){
+        myTimer = new Timer();
         myTimer.scheduleAtFixedRate(new MyTimerTask(), 0, 5000);
     }
 
